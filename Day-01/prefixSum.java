@@ -1,4 +1,4 @@
-class prefixSum{
+class PrefixSum{
     public static void main(String[] args){
         int[] arr = {2, 5, 3, 8, 1, 6};
         int[] prefix = new int[arr.length];
@@ -20,6 +20,6 @@ class prefixSum{
         }
 
         System.out.print(sum);
-        
+
     }
 }
