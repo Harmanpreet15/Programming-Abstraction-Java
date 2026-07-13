@@ -1,7 +1,5 @@
+// ----------- Two pointer approach ----------------
 
-import java.util.*;
-
-// Two pointer approach
 
 public class TargetSum{
     public static void main(String[] args){
