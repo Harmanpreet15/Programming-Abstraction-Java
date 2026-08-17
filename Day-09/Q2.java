@@ -1,6 +1,6 @@
 // Count subarrays whose sum is less than k
 
-public class Ques2 {
+public class Q2 {
     public static int countSubarrays(int[] arr, int k){
         int left = 0;
         int sum = 0;

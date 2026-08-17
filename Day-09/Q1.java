@@ -1,4 +1,4 @@
-class Ques1{
+class Q1{
     public static int SmallestSubarray(int[] arr, int k){
         int left = 0;
         int sum = 0;
