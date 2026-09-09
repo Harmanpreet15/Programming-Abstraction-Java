@@ -42,7 +42,7 @@ public class Q14 {
         while (curr != null) {
             System.out.print(curr.val);
             if (curr.next != null) {
-                System.out.print(" → ");
+                System.out.print(" -> ");
             }
             curr = curr.next;
         }
