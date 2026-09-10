@@ -1,4 +1,4 @@
-// Sum f a array using recursion
+// Sum of array using recursion
 
 public class Q_3 {
 
