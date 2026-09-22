@@ -22,7 +22,7 @@ class StockSpanner {
     }
 }
 
-public class Main {
+public class LeetCode901 {
 
     public static void main(String[] args) {
 
