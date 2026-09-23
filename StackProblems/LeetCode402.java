@@ -1,41 +1,41 @@
+import java.util.*;
+
 public class LeetCode402{
 
     public static String removeKdigits(String num, int k) {
 
-        StringBuilder stack = new StringBuilder();
+        Stack<Character> stack = new Stack<>();
 
-        for (char digit : num.toCharArray()) {
-
-            while (k > 0 &&
-                   stack.length() > 0 &&
-                   stack.charAt(stack.length() - 1) > digit) {
-
-                stack.deleteCharAt(stack.length() - 1);
+        for(char ch : num.toCharArray()){
+            while(k>0 && !stack.isEmpty() && stack.peek()>ch){
+                stack.pop();
                 k--;
             }
-
-            stack.append(digit);
+            stack.push(ch);
         }
 
-        // If removals are still left
-        while (k > 0) {
-            stack.deleteCharAt(stack.length() - 1);
+        while (k>0) {
+            stack.pop();
             k--;
         }
 
-        // Remove leading zeros
-        int i = 0;
-        while (i < stack.length() && stack.charAt(i) == '0') {
+        StringBuilder result = new StringBuilder();
+
+        while (!stack.isEmpty()) {
+            result.append(stack.pop());
+        }
+
+        result.reverse();
+
+
+        int i=0;
+        while(i<result.length() && result.charAt(i) == '0'){
             i++;
         }
 
-        String result = stack.substring(i);
+        result = new StringBuilder(result.substring(i));
 
-        if (result.length() == 0) {
-            return "0";
-        }
-
-        return result;
+        return result.length()==0 ? "0" : result.toString();
     }
 
     public static void main(String[] args) {
