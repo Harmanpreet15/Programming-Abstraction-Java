@@ -31,7 +31,6 @@ public class LeetCode347 {
         int[] nums = {1, 1, 1, 2, 2, 3};
         int k = 2;
 
-        int[] res = topKFrequent(nums, k);
-        System.out.println(Arrays.toString(res));
+        System.out.println(Arrays.toString(topKFrequent(nums, k)));
     }
 }
