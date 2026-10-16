@@ -2,7 +2,7 @@ import java.util.*;
 
 public class LeetCode347 {
     public static int[] topKFrequent(int[] nums, int k){
-        Map<Integer, Integer> freq = new HashMap<>();
+        HashMap<Integer, Integer> freq = new HashMap<>();
 
         for(int num : nums){
             freq.put(num, freq.getOrDefault(num, 0)+1);
