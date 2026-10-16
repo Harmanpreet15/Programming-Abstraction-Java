@@ -1,4 +1,3 @@
-
 public class LeetCode346 {
 
     java.util.Queue<Integer> q = new java.util.LinkedList<>();
