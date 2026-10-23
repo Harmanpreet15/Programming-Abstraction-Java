@@ -37,7 +37,6 @@ public class LeetCode145 {
         root.left.right.left = new Node(6);
         root.left.right.right = new Node(7);
 
-
         List<Integer> result = postorder(root);
 
         System.out.println("Postorder Traversal: " + result);
