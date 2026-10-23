@@ -11,16 +11,17 @@ public class LeetCode94 {
         }
     }
 
+    static List<Integer> result = new ArrayList<>();
+
     public static List<Integer> inorder(Node root) {
-        List<Integer> result = new ArrayList<>();
 
         if (root == null) {
             return result;
         }
 
-        result.addAll(inorder(root.left));  // Visit left
-        result.add(root.data);              // Visit root
-        result.addAll(inorder(root.right)); // Visit right
+        inorder(root.left); 
+        result.add(root.data);           
+        inorder(root.right);
 
         return result;
     }
@@ -31,11 +32,13 @@ public class LeetCode94 {
         root.right = new Node(3);
         root.left.left = new Node(4);
         root.left.right = new Node(5);
-        root.right.left = new Node(6);
-        root.right.right = new Node(7);
+        root.right.right = new Node(8);
+        root.right.right.left = new Node(9);
+        root.left.right.left = new Node(6);
+        root.left.right.right = new Node(7);
 
         List<Integer> result = inorder(root);
 
-        System.out.println("Inorder Traversal: " + result);
+        System.out.println(result);
     }
 }
