@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class PrintingTree {
     static class Node{
         int data;
@@ -14,7 +12,7 @@ public class PrintingTree {
             return;
         }
 
-        Queue<Node> q = new java.util.LinkedList<>();
+        java.util.Queue<Node> q = new java.util.LinkedList<>();
 
         q.add(root);
 
