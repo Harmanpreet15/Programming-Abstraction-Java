@@ -11,16 +11,17 @@ public class LeetCode144 {
         }
     }
 
+    static List<Integer> result = new ArrayList<>();
+
     public static List<Integer> preorder(Node root) {
-        List<Integer> result = new ArrayList<>();
 
         if (root == null) {
             return result;
         }
 
         result.add(root.data);        
-        result.addAll(preorder(root.left)); 
-        result.addAll(preorder(root.right)); 
+        preorder(root.left); 
+        preorder(root.right); 
 
         return result;
     }
