@@ -31,9 +31,9 @@ public class LeetCode502{
 
     }
     public static void main(String[] args) {
-        int k=2, w=0;
+        int k=3, w=0;
         int[] profits = {1, 2, 3};
-        int[] capital = {0, 1, 1};
+        int[] capital = {0, 1, 2};
 
         System.out.println(findMaximizedCapital(k, w, profits, capital));
     }
