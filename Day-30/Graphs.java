@@ -3,10 +3,13 @@ import java.util.*;
 public class Graphs {
     public static void main(String[] args) {
         int n  = 4;
+        
         ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
+
         for(int i =0;i<n;i++){
             graph.add(new ArrayList<>());
         }
+
         graph.get(0).add(1);
         graph.get(1).add(0);
         graph.get(0).add(2);
