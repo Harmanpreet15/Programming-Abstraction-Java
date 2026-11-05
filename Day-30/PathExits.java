@@ -38,7 +38,6 @@ public class PathExits {
 
      public static void main(String[] args) {
         int V = 6;
-        int E = 4;
         int edges[][] = {{0, 2}, {1, 2}, {0, 3}, {4, 5}};
         int src = 1;
         int dest = 5;
