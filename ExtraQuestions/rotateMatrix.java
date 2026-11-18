@@ -6,7 +6,7 @@
 
 
 // -------1. CLOCKWISE -> Using an extra matrix-----------
-// public class rotateMatrix {
+// public class RotateMatrix {
 //     public static void main(String[] args) {
 //         int[][] matrix = {
 //             {1, 2, 3},
@@ -40,7 +40,7 @@
 // 1. Transpose the matrix
 // 2. Reverse each row
 
-// public class rotateMatrix {
+// public class RotateMatrix {
 //     public static void rotate(int[][] matrix){
 //         int n = matrix.length;
 
@@ -96,7 +96,7 @@
 
 
 // -------1. ANTICLOCKWISE -> Using an extra matrix-----------
-// public class rotateMatrix {
+// public class RotateMatrix {
 //     public static void main(String[] args) {
 //         int[][] matrix = {
 //             {1, 2, 3},
@@ -130,7 +130,7 @@
 // 1. Transpose the matrix
 // 2. Reverse each row
 
-public class rotateMatrix {
+public class RotateMatrix {
     public static void rotate(int[][] matrix){
         int n = matrix.length;
 
